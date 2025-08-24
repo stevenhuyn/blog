@@ -3,15 +3,19 @@ Created: 2025-8-24
 
 # Switching from Windows to Ubuntu
 
-I'm now pretty comfortable in Ubuntu 24.04 
+I'm now pretty comfortable in Ubuntu 24.04 and am enjoying it a lot.
 
 Below is a small guide (to myself) on alternatives and switching from Windows.
 
 With Pewdiepie's new Linux psyopping, this may be useful to new people taking the leap. Maybe.
 
+By far the biggest issue is everything just "crashes" all the time, Vscode, Cryptomator etc and it asks to send a crash report. The applications still work, so no idea what's going on.
+
 ## Bitlocker/Encryption
 
-Right now TPM backed full disk encryption is [experimental on 25.10](https://discourse.ubuntu.com/t/ubuntu-desktop-25-10-the-questing-quokka-roadmap/61159). We await, for now one has to type 2 passwords to log in if you want encryption to a Windows level.
+I believe both Windows and Mac have really good encryption defaults, not the case on Ubuntu.
+
+Right now TPM backed full disk encryption is [experimental on 25.10](https://discourse.ubuntu.com/t/ubuntu-desktop-25-10-the-questing-quokka-roadmap/61159). We await, for now one has to type 2 passwords to log in if you want encryption UX like bitlocker.
 
 With the current installer wizard, I don't believe it sets up 2nd drive unlocking on boot, so you need to mess with `fstab` and stuffs I believe, which is quite spooky.
 
@@ -33,6 +37,15 @@ Cryptomator is available, but I always have trouble with AppImages (I wish there
 
 The biggest issue is that snaps can't access the default mount location, so you will have to edit the default path. [See this discussion](https://github.com/cryptomator/cryptomator/discussions/3922) for details.
 
+Logging out (not locking) appears to not mount the FUSE volumes that cryptomator has which breaks Cryptomator on start so I have this as a script to unnmount running on Gnome's Startup Applications
+
+```bash
+#!/usr/bin/env bash
+
+fusermount -uz /home/$USERNAME/Cryptomator/$VAULT1 2>/dev/null || true
+fusermount -uz /home/$USERNAME/Cryptomator/$VAULT2 2>/dev/null || true
+cryptomator
+```
 
 ## Voidtool's Everything
 
@@ -45,6 +58,8 @@ The biggest issue is that snaps can't access the default mount location, so you 
 Honestly beautiful work. May need to explicitly set the Proton version for certain games to help them continue to work. Elden Ring Neightreign FPS was dreadful though so cutting edge is a no go. Prepare to be a paitent gamer.
 
 ## Remote Desktop/Tailscale
+
+Use Remote Login, not Remote Desktop for autoscaling resolution. This requires you to log out of your instance (CTRL + SHIFT + L) instead of lock (CTRL + L)
 
 Tailscale is a godsend albeit with a mild learning curve with setting up permissions. It appears to launch before login so it must be a system wide installation. Windows works seamlessly to remote into Ubuntu AND my trackpad shortcut to middle click actually works. Only huge bug I notice is huuge FPS drop about 5 minutes into the session, which my be alleviated by enabling the exit node?
 
