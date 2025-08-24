@@ -3,7 +3,9 @@ Created: 2025-8-24
 
 # Switching from Windows to Ubuntu
 
-I'm now pretty comfortable in Ubuntu. Below is a small guide (to myself) on alternatives and switching from Windows.
+I'm now pretty comfortable in Ubuntu 24.04 
+
+Below is a small guide (to myself) on alternatives and switching from Windows.
 
 With Pewdiepie's new Linux psyopping, this may be useful to new people taking the leap. Maybe.
 
@@ -34,17 +36,21 @@ The biggest issue is that snaps can't access the default mount location, so you 
 
 ## Voidtool's Everything
 
-[Voidtool's everything](https://www.voidtools.com/) is a super duper useful tool on Windows for instant search of your whole filestylem. Useful for devs trying to find all their configuration files and stuff.x 
+[Voidtool's everything](https://www.voidtools.com/) is a super duper useful tool on Windows for instant search of your whole filestylem. Useful for devs trying to find all their configuration files and stuff.
 
-[fsearch](https://github.com/cboxdoerfer/fsearch) This is a hairer app to install, but it should be pretty safe, problem is the search style isn't the same.
+[fsearch](https://github.com/cboxdoerfer/fsearch) is available as a PPA but it should be pretty safe, and was made to be an Everything alternative.
 
 ## Steam
 
-Honestly beautiful work. May need to explicitly set the Proton version
+Honestly beautiful work. May need to explicitly set the Proton version for certain games to help them continue to work. Elden Ring Neightreign FPS was dreadful though so cutting edge is a no go. Prepare to be a paitent gamer.
 
-## Remote Desktop
+## Remote Desktop/Tailscale
 
-Tailscale is a godsend mild learning curve with setting up permissions. It appears to launch before login so must be a system wide installation. Windows works seamlessly to remote into Ubuntu AND my trackpad shortcut to middle click actually works. Only huge bug I notice is huuge FPS drop about 5 minutes into the session, which my be alleviated by enabling the exit node?
+Tailscale is a godsend albeit with a mild learning curve with setting up permissions. It appears to launch before login so it must be a system wide installation. Windows works seamlessly to remote into Ubuntu AND my trackpad shortcut to middle click actually works. Only huge bug I notice is huuge FPS drop about 5 minutes into the session, which my be alleviated by enabling the exit node?
+
+Tailscale also allows easy vscode SSH and Tunneling if I wanted a lighter connection.
+
+Remoting allows me to keep my 5 year old Surface Laptop 3 being useful. Developing with Rust is too heavy for it. 
 
 ## Installing Applications
 
@@ -67,13 +73,19 @@ I actually themed my temrinal to look like Window's CMD
 ## Aliases
 
 ```bash
+# I seriously don't remember the commands to update everything, but Ubuntu does this regularly by itself so this is uneeded
 alias updateall='apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
 
 # Open the file explorer inside this directory
 alias openhere='nautilus .'
 
+# Sometimes I need to see if my files are actually syncing (they usually are)
 alias onedrivelogs='journalctl --user-unit=onedrive -f'
+
+# Rebuilt the PC so needed a quick check.
 alias cputemps="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"
+
+
 alias diskspace="du -xhd1 /home/$USERNAME | sort -hr"
 ```
 
