@@ -1,7 +1,7 @@
 # blog
 Notes for myself, publicly.
 
-Avoiding the tinkering<superscript>[1]</superscript> hole with a themed website.
+Avoiding the tinkering hole with a themed website.
 
 
 ## Posts
@@ -11,4 +11,4 @@ Avoiding the tinkering<superscript>[1]</superscript> hole with a themed website.
 --- 
 
 
-<subscript>[1]idea inspired by someone (I don't remember who).</subscript>
+idea inspired by someone (I don't remember who).
