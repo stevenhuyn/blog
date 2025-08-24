@@ -65,8 +65,11 @@ Downsides of the other ones.
 
 ## Shortcuts
 
+Had to add some shortcuts to gnome settings GUI
+
 - Win + E: Open file explorer
 - Win + T: Open terminal
+- Win + Shift + S: Snipping Tool/Screenshotter
 
 I actually themed my temrinal to look like Window's CMD
 
