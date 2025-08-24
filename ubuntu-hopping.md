@@ -60,6 +60,9 @@ Downsides of the other ones.
 ## Shortcuts
 
 - Win + E: Open file explorer
+- Win + T: Open terminal
+
+I actually themed my temrinal to look like Window's CMD
 
 ## Aliases
 
