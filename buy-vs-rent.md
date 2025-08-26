@@ -14,6 +14,7 @@ Housing
 - Upkeep
 - Buy and Selling Costs
 - Not Divesified aka high risk
+- Gov has basically said it's too big to fail
 
 Renting + ETFs
 - Usually cheaper
