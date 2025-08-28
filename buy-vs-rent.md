@@ -15,6 +15,7 @@ Housing
 - Buy and Selling Costs
 - Not Divesified aka high risk
 - Gov has basically said it's too big to fail
+- 5% deposit scheme (conditional on elligibility)
 
 Renting + ETFs
 - Usually cheaper
