@@ -11,6 +11,8 @@ With Pewdiepie's new Linux psyopping, this may be useful to new people taking th
 
 By far the biggest issue is everything just "crashes" all the time, Vscode, Cryptomator etc and it asks to send a crash report. The applications still work, so no idea what's going on.
 
+Another issue is twice now I've booted with only 1 monitor working (I usually have 2). Very strange.
+
 ## Bitlocker/Encryption
 
 I believe both Windows and Mac have really good encryption defaults, not the case on Ubuntu.
@@ -28,6 +30,11 @@ You will also see a warning upon every login that [Curl has bugs](https://github
 ![OneDrive Warning that Curl is out of date](onedrivewarning.png)
 
 I suspect I may be moving away from Onedrive in the future and a simpler Google Drive client may be on the play in future.
+
+## Docker
+
+Docker Desktop requires some steps to log in:
+https://docs.docker.com/desktop/setup/sign-in/#credentials-management-for-linux-users
 
 ## Cryptomator
 
@@ -106,4 +113,6 @@ alias cputemps="paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/cl
 
 alias diskspace="du -xhd1 /home/$USERNAME | sort -hr"
 ```
+
+
 
