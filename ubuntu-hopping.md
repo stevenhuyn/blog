@@ -21,6 +21,8 @@ Right now TPM backed full disk encryption is [experimental on 25.10](https://dis
 
 With the current installer wizard, I don't believe it sets up 2nd drive unlocking on boot, so you need to mess with `fstab` and stuffs I believe, which is quite spooky.
 
+Nvm: Quite easy to set up auto mount on login via Gnome Disk Utility, click the cog.
+
 ## Onedrive
 
 Currently it appears [abraunegg's onedrive](https://github.com/abraunegg/onedrive) is the easiest onedrive solution. You will need to edit a config to [set up](https://github.com/abraunegg/onedrive/blob/b4179d1f27ea8a3800f003b12fe3a8c6a89e7a80/docs/usage.md#compatibility-with-obsidian) Obsidian. Apparently Obsidian saves every keystroke and is quite bad for your drive's lifespan. 
