@@ -72,9 +72,11 @@ Use Remote Login, not Remote Desktop for autoscaling resolution. This requires y
 
 Tailscale is a godsend albeit with a mild learning curve with setting up permissions. It appears to launch before login so it must be a system wide installation. Windows works seamlessly to remote into Ubuntu AND my trackpad shortcut to middle click actually works. Only huge bug I notice is huuge FPS drop about 5 minutes into the session, which my be alleviated by enabling the exit node?
 
-Tailscale also allows easy vscode SSH and Tunneling if I wanted a lighter connection.
+Tailscale also allows easy vscode SSH and Tunneling if I wanted a lighter connection. It also works seemlessly with devcontainers, (you don't need to install docker on your client). Only concern is you cannot configure a password.
 
 Remoting allows me to keep my 5 year old Surface Laptop 3 being useful. Developing with Rust is too heavy for it. 
+
+If you set the username to be the same as your usual host's username. The client will only ever see a black screen upon remote connection.
 
 ## Installing Applications
 
