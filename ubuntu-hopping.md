@@ -38,6 +38,11 @@ I suspect I may be moving away from Onedrive in the future and a simpler Google 
 Docker Desktop requires some steps to log in:
 https://docs.docker.com/desktop/setup/sign-in/#credentials-management-for-linux-users
 
+You should use docker engine though:
+
+https://docs.docker.com/engine/install/ubuntu/
+https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd
+
 ## Cryptomator
 
 With cloud storage, I like to encrypt the files that go in the cloud as well.
@@ -77,6 +82,8 @@ Tailscale also allows easy vscode SSH and Tunneling if I wanted a lighter connec
 Remoting allows me to keep my 5 year old Surface Laptop 3 being useful. Developing with Rust is too heavy for it. 
 
 If you set the username to be the same as your usual host's username. The client will only ever see a black screen upon remote connection.
+
+https://code.visualstudio.com/remote/advancedcontainers/develop-remote-host#_connect-using-the-remote-ssh-extension
 
 ## Installing Applications
 
