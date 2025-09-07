@@ -43,6 +43,20 @@ You should use docker engine though:
 https://docs.docker.com/engine/install/ubuntu/
 https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd
 
+## Immich
+
+Docker has a problem with traversing fuse mounted directories (Cryptomator)
+
+Thus External Libraries fail if you are adding a docker volume to a Fuse directory as root has no access.
+
+You need to do 2 things:
+- Update /etc/fuse.conf and uncomment `allow_other`
+- In the Cryptomator mount options add `-oallow_root` as Docker runs as root
+
+You can now add the volume as expected.
+
+Noticable this problem didn't occur with docker desktop.
+
 ## Cryptomator
 
 With cloud storage, I like to encrypt the files that go in the cloud as well.
