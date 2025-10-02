@@ -33,6 +33,12 @@ You will also see a warning upon every login that [Curl has bugs](https://github
 
 I suspect I may be moving away from Onedrive in the future and a simpler Google Drive client may be on the play in future.
 
+## Dropbox
+
+Gotta edit `/etc/sysctl.conf` and add `fs.inotify.max_user_watches=200000` (the original dropbox error recommendation is only 100000)
+Then rus `sysctl -p` to reset it or something I think idk check the error.
+https://stackoverflow.com/questions/35711897/dropbox-fs-inotify-error
+
 ## Docker
 
 Docker Desktop requires some steps to log in:
