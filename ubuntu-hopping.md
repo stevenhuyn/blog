@@ -147,3 +147,13 @@ alias diskspace="du -xhd1 /home/$USERNAME | sort -hr"
 
 
 
+# Vscode and Podman
+
+https://github.com/microsoft/vscode/issues/232863#issuecomment-2667750241
+
+```
+~$ cat /home/anton/.config/containers/storage.conf
+[storage]
+driver = "overlay"
+graphroot = "/home/anton/.local/share/containers/storage"
+```
