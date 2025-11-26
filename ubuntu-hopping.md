@@ -21,7 +21,9 @@ Right now TPM backed full disk encryption is [experimental on 25.10](https://dis
 
 With the current installer wizard, I don't believe it sets up 2nd drive unlocking on boot, so you need to mess with `fstab` and stuffs I believe, which is quite spooky.
 
-Nvm: Quite easy to set up auto mount on login via Gnome Disk Utility, click the cog.
+Nvm: Quite easy to set up auto mount on login via Gnome Disk Utility, click the cog. Make sure to turn off user defaults on both the encrypted partition and the unecnrypted part. Select both rectangle halves.
+
+![alt text](image.png)
 
 ## Onedrive
 
