@@ -51,6 +51,17 @@ You should use docker engine though:
 https://docs.docker.com/engine/install/ubuntu/
 https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd
 
+Delaying Docker Start to wait for Cryptomator/Dropbox/Mounting LUKs Disc
+```
+sudo systemctl edit docker.service
+
+# Add the following, read the documents as there are some ignored sections:
+
+[Service]
+ExecStartPre=/bin/sleep 20
+```
+
+
 ## Immich
 
 Docker has a problem with traversing fuse mounted directories (Cryptomator)
