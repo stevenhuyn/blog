@@ -6,8 +6,13 @@ Avoiding the tinkering hole with a themed website.
 
 ## Posts
 
-- [Buy vs Rent + ETFs](./buy-vs-rent.md)
-- [Switching from Windows to Linux](./ubuntu-hopping.md)
+### 2026
+
+- [My Linux Ubuntu](./2026/my-linux-ubuntu.md)
+
+### 2025
+- [Buy vs Rent + ETFs](./2025/buy-vs-rent.md)
+- [Switching from Windows to Linux](./2025/ubuntu-hopping.md)
 
 --- 
 
