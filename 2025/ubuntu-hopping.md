@@ -23,7 +23,7 @@ With the current installer wizard, I don't believe it sets up 2nd drive unlockin
 
 Nvm: Quite easy to set up auto mount on login via Gnome Disk Utility, click the cog. Make sure to turn off user defaults on both the encrypted partition and the unecnrypted part. Select both rectangle halves.
 
-![alt text](image.png)
+![alt text](../image.png)
 
 ## Onedrive
 
